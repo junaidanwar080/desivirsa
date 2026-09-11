@@ -232,7 +232,7 @@ function App() {
         rel="noreferrer"
         className="floating-whatsapp"
         aria-label="Order on WhatsApp"
-      >
+      > 
         <MessageCircle size={28} />
         <span>Order on WhatsApp</span>
       </a>
