@@ -2,27 +2,33 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { Phone, MessageCircle, ArrowRight, Leaf, ShieldCheck, Truck, Heart, Instagram, Facebook } from "lucide-react";
 import "./styles.css";
+import gheeImage from "./assets/products/desi-ghee.png";
+import eggsImage from "./assets/products/desi-eggs.png";
+import rabbitImage from "./assets/products/rabbit-meat.png";
 
 const phone = "923494050691";
 const displayPhone = "0349 4050691";
 
 const products = [
   {
-    icon: "🧈",
+    image: gheeImage,
     name: "Desi Ghee",
-    description: "Traditional desi ghee made with care for rich taste and authentic aroma.",
+    description:
+      "Traditional desi ghee made with care for rich taste and authentic aroma.",
     tag: "Farm Fresh"
   },
   {
-    icon: "🥚",
+    image: eggsImage,
     name: "Desi Eggs",
-    description: "Fresh desi eggs sourced from healthy, naturally raised hens.",
+    description:
+      "Fresh desi eggs sourced from healthy, naturally raised hens.",
     tag: "Fresh Daily"
   },
   {
-    icon: "🐇",
+    image: rabbitImage,
     name: "Rabbit Meat",
-    description: "Fresh, carefully handled rabbit meat from our own farm.",
+    description:
+      "Fresh, carefully handled rabbit meat from our own farm.",
     tag: "Farm Raised"
   }
 ];
@@ -118,10 +124,14 @@ function App() {
           <div className="product-grid">
             {products.map((product) => (
               <article className="product-card" key={product.name}>
-                <div className="product-visual">
-                  <span className="product-icon">{product.icon}</span>
-                  <span className="product-tag">{product.tag}</span>
-                </div>
+               <div className="product-visual">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="product-image"
+                />
+                <span className="product-tag">{product.tag}</span>
+              </div>
                 <div className="product-body">
                   <h3>{product.name}</h3>
                   <p>{product.description}</p>
@@ -215,6 +225,17 @@ function App() {
         </div>
         <div className="copyright">© {new Date().getFullYear()} Desi Virsa. All rights reserved.</div>
       </footer>
+
+      <a
+        href={orderUrl()}
+        target="_blank"
+        rel="noreferrer"
+        className="floating-whatsapp"
+        aria-label="Order on WhatsApp"
+      >
+        <MessageCircle size={28} />
+        <span>Order on WhatsApp</span>
+      </a>
     </div>
   );
 }

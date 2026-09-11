@@ -153,3 +153,90 @@ footer .brand strong { color:white; }.footer-brand p { font-size:12px;margin-top
   .section { padding:65px 5vw; }.product-visual { height:210px; }
   footer { grid-template-columns:1fr; }.socials { justify-content:flex-start; }
 }
+
+
+.product-visual {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+}
+
+
+.floating-whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 20px;
+  border-radius: 50px;
+
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.22);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+  color: #fff;
+}
+
+.floating-whatsapp svg {
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 600px) {
+  .floating-whatsapp {
+    right: 16px;
+    bottom: 16px;
+    width: 54px;
+    height: 54px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .floating-whatsapp span {
+    display: none;
+  }
+
+  .floating-whatsapp svg {
+    width: 27px;
+    height: 27px;
+  }
+}
