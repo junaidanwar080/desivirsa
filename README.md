@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Desi Virsa — React Website
 
 A responsive React + Vite landing website for Desi Virsa.
@@ -33,3 +34,6 @@ No environment variables are required for this first version.
 - Phone/WhatsApp number: `src/main.jsx`
 - Colors and responsive layout: `src/styles.css`
 - Replace the illustrated/emoji product visuals with real product photos when available.
+=======
+# desi-virsa-react
+>>>>>>> 9913f21b31dc142b682a29043bf9a566767e1ff4
