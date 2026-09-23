@@ -1,10 +1,12 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Phone, MessageCircle, ArrowRight, Leaf, ShieldCheck, Truck, Heart, Instagram, Facebook } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import "./styles.css";
 import gheeImage from "./assets/products/desi-ghee.png";
 import eggsImage from "./assets/products/desi-eggs.png";
 import rabbitImage from "./assets/products/rabbit-meat.png";
+import desiVirsaBanner from "./assets/banner.png";
 
 const phone = "923494050691";
 const displayPhone = "0349 4050691";
@@ -65,7 +67,7 @@ function App() {
       </header>
 
       <main>
-        <section id="home" className="hero">
+        {/* <section id="home" className="hero">
           <div className="hero-copy">
             <div className="eyebrow"><Leaf size={16} /> From our farm to your home</div>
             <h1>Real Desi Taste.<br /><em>Purely from the farm.</em></h1>
@@ -98,18 +100,29 @@ function App() {
             <div className="floating-card card-one">🥚 <span>Fresh Eggs</span></div>
             <div className="floating-card card-two">🧈 <span>Desi Ghee</span></div>
           </div>
-        </section>
+        </section> */}
+        {/* DESI VIRSA PRODUCT BANNER */}
+        <section className="product-banner">
+          <div className="product-banner-inner">
+            <img
+              src={desiVirsaBanner}
+              alt="Desi Virsa - Desi Ghee, Desi Eggs and Rabbit Meat"
+            />
 
-        <section className="intro">
-          <div>
-            <span className="section-kicker">OUR PROMISE</span>
-            <h2>Simple products.<br />Honest goodness.</h2>
+            <div className="product-banner-content">
+              {/* <span>DESI VIRSA</span> */}
+
+
+              <a
+                href={orderUrl()}
+                target="_blank"
+                rel="noreferrer"
+                className="primary-btn"
+              >
+                Order on WhatsApp <ArrowRight size={18} />
+              </a>
+            </div>
           </div>
-          <p>
-            Desi Virsa is built around a simple idea: bring genuine desi products
-            from our farm closer to your family. We start small, care about quality,
-            and will keep adding products rooted in our traditional food culture.
-          </p>
         </section>
 
         <section id="products" className="products section">
@@ -233,7 +246,7 @@ function App() {
         className="floating-whatsapp"
         aria-label="Order on WhatsApp"
       > 
-        <MessageCircle size={28} />
+        <FaWhatsapp size={28} />
         <span>Order on WhatsApp</span>
       </a>
     </div>
