@@ -55,10 +55,10 @@ function App() {
         </a>
 
         <nav>
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#story">Our Story</a>
-          <a href="#contact">Contact</a>
+          <a href="#home" ><b>Home</b></a>
+          <a href="#products"><b>Products</b></a>
+          <a href="#story"><b>Our Story</b></a>
+          <a href="#contact"><b>Contact</b></a>
         </nav>
 
         <a className="nav-order" href={orderUrl()} target="_blank" rel="noreferrer">
