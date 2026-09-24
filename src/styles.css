@@ -311,7 +311,7 @@ footer .brand strong { color:white; }.footer-brand p { font-size:12px;margin-top
     /* width: 100%; */
     height: 480px;
     object-fit: cover;
-    object-position: right;
+    object-position:10% center;
   }
 
 }
