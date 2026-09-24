@@ -6,7 +6,7 @@ import "./styles.css";
 import gheeImage from "./assets/products/desi-ghee.png";
 import eggsImage from "./assets/products/desi-eggs.png";
 import rabbitImage from "./assets/products/rabbit-meat.png";
-import desiVirsaBanner from "./assets/banner.png";
+import desiVirsaBanner from "./assets/desi-virsa-banner.png";
 
 const phone = "923494050691";
 const displayPhone = "0349 4050691";
@@ -67,40 +67,7 @@ function App() {
       </header>
 
       <main>
-        {/* <section id="home" className="hero">
-          <div className="hero-copy">
-            <div className="eyebrow"><Leaf size={16} /> From our farm to your home</div>
-            <h1>Real Desi Taste.<br /><em>Purely from the farm.</em></h1>
-            <p>
-              Bringing you authentic farm-fresh products made with traditional values,
-              honest care and the taste of our villages.
-            </p>
-            <div className="hero-actions">
-              <a className="primary-btn" href="#products">Explore Products <ArrowRight size={18} /></a>
-              <a className="text-btn" href={orderUrl()} target="_blank" rel="noreferrer">
-                <MessageCircle size={18} /> Order on WhatsApp
-              </a>
-            </div>
-            <div className="trust-row">
-              <span><ShieldCheck size={18} /> Quality focused</span>
-              <span><Heart size={18} /> Traditional values</span>
-              <span><Truck size={18} /> Farm fresh</span>
-            </div>
-          </div>
-
-          <div className="hero-art">
-            <div className="sun"></div>
-            <div className="hill hill-one"></div>
-            <div className="hill hill-two"></div>
-            <div className="farm-card">
-              <div className="farm-emoji">🌾</div>
-              <span>DESI VIRSA</span>
-              <strong>From the land we love</strong>
-            </div>
-            <div className="floating-card card-one">🥚 <span>Fresh Eggs</span></div>
-            <div className="floating-card card-two">🧈 <span>Desi Ghee</span></div>
-          </div>
-        </section> */}
+        
         {/* DESI VIRSA PRODUCT BANNER */}
         <section className="product-banner">
           <div className="product-banner-inner">
@@ -109,19 +76,6 @@ function App() {
               alt="Desi Virsa - Desi Ghee, Desi Eggs and Rabbit Meat"
             />
 
-            <div className="product-banner-content">
-              {/* <span>DESI VIRSA</span> */}
-
-
-              <a
-                href={orderUrl()}
-                target="_blank"
-                rel="noreferrer"
-                className="primary-btn"
-              >
-                Order on WhatsApp <ArrowRight size={18} />
-              </a>
-            </div>
           </div>
         </section>
 
