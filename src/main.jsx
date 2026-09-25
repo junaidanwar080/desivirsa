@@ -6,7 +6,7 @@ import "./styles.css";
 import gheeImage from "./assets/products/desi-ghee.png";
 import eggsImage from "./assets/products/desi-eggs.png";
 import rabbitImage from "./assets/products/rabbit-meat.png";
-import desiVirsaBanner from "./assets/desi-virsa-banner.png";
+import desiVirsaBanner from "./assets/desi-virsa-banner-2.png";
 
 const phone = "923494050691";
 const displayPhone = "0349 4050691";
